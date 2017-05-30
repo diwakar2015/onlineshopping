@@ -50,9 +50,9 @@
 			</form>
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="add.html">Add Product</a></li>
-				<li class="active"><a href="signup.html">Browse Products</a></li>
+				<li><a href="home.html">Browse Products</a></li>
 				<li><a href="profile.html">Profile</a></li>
-				<li><a href="api.html">API</a></li>
+				<li class="active"><a href="profile.html">API</a></li>
 				<li><a href="logout.html">Logout</a></li>
 			</ul>
 		</div>
@@ -68,11 +68,31 @@
 					<div class="col-lg-6">
 						
 					
-					<div class="container">
-  <h2>Welcome Home!!</h2>
-  <h3>Listing of products. coming soon</h3>
-  <span class="label label-success">Log in Successful</span>
-</div>	
+<p>
+  <a class="btn btn-primary" data-toggle="collapse" href="#api1" aria-expanded="false" aria-controls="collapseExample">
+   Get All Products
+  </a>
+</p>
+<div class="collapse" id="api1">
+  <div class="card card-block">
+  <p>Action : To Get the all products</p>
+  <p>URL: /v0/products</p>
+  <p>Method: GET</p>
+  </div>
+</div>
+
+<p>
+  <a class="btn btn-primary" data-toggle="collapse" href="#api2" aria-expanded="false" aria-controls="collapseExample">
+   Get A product by Id
+  </a>
+</p>
+<div class="collapse" id="api2">
+  <div class="card card-block">
+  <p>Action : To Get a product by id</p>
+  <p>URL: /v0/products/{id}</p>
+  <p>Method: GET</p>
+  </div>
+</div>
 
 					</div>
 				</div>

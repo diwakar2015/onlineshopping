@@ -1,23 +1,59 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<link href="${pageContext.request.contextPath}/resources/assets/css/bootstrap-united.css" rel="stylesheet" />
+<link href="${pageContext.request.contextPath}/resources/bootstrap/css/bootstrap-responsive.css" rel="stylesheet" />
+<style>
+body {
+	height: 100%;
+	margin: 0;
+	background: url(assets/img/books.jpg);
+	background-size: 1440px 800px;
+	background-repeat: no-repeat;
+	display: compact;
+}
+</style>
 </head>
 <body>
-	<center>
-		<h3>Login Page</h3>
-		<form name="userLoginForm" method="post" action="login">
+	<div class="navbar navbar-default">
 
-			User Name: <input name="userName" / type="text"> </br> 
-			Password: <input
-				name="password" / type="password"> </br> <input name="submit"
-				type="submit" value="submit">Submit</br>
-		</form>
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse"
+				data-target=".navbar-responsive-collapse">
+				<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+					class="icon-bar"></span>
+			</button>
+		</div>
 
+		<div class="navbar-collapse collapse navbar-responsive-collapse">
+			<form class="navbar-form navbar-right">
+				<input type="text" class="form-control" placeholder="Search">
+			</form>
+			<ul class="nav navbar-nav navbar-right">
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="/GenericPortal/jsp/signup.jsp">Signup</a></li>
+				<form:form id="myLoginForm" method="get"
+							class="bs-example form-horizontal" action="login">
+				<li> <a href="javascript:;" onclick="document.getElementById('myLoginForm').submit();">Login</a></li>
+				</form:form>
+			
+			</ul>
+		</div>
+		<!-- /.nav-collapse -->
+	</div>
+	<div class="container">
+		<div class="jumbotron">
+			<div>
+				<h1>Welcome to Online Portal!</h1>
+				<p>To get started, you need to enter your details to enroll with
+					us. Kindly login to access your details, if you are already enrolled.</p>
+			</div>
 
-	</center>
+			<a class="btn btn-primary" href="signup.html">Signup » </a> <a
+				class="btn btn-primary" href="login.html">Login » </a>
+		</div>
+
+		<div></div>
+	</div>
+
 </body>
 </html>
